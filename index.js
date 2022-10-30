@@ -17,7 +17,7 @@ var data = 'Hello World';
 // string singlequotes
 var data = 'Hello World';
 
-var name = 'Xavier';
+var name = 'Srini';
 var salutation = 'Mr.';
 
 var greet = `${salutation} ${name}`; // we can embed the varaible or functions into a string
@@ -47,10 +47,66 @@ var pieceOfHtmlWithoutUsingBackTick =
   '</div>' +
   '</div>';
 
-
 var count = 0;
 for (let char of greet) {
   console.log(`String postion at ${count} :: ${char}`);
   count++;
 }
+
+for (let i = 0; i < greet.length; i++)
+  console.log(`chartAt position  ${i} :: `, greet.charAt(i));
+
+console.clear();
+
+console.log('changing string to uppercase ', greet.toUpperCase());
+console.log('changing string to lowercase ', greet.toLowerCase());
+
+console.log(
+  'String.includes() return boolean',
+  greet.toLowerCase().includes('xavier')
+);
+
+console.log(
+  'String.startswith() return boolean',
+  greet.toLowerCase().startsWith('m')
+);
+
+console.log(
+  'String.endsWith() return boolean',
+  greet.toLowerCase().endsWith('r')
+);
+
+console.log('String.indexOf()', greet.toLowerCase().indexOf('x'));
+
+// indexof based condition sample
+if (greet.toLowerCase().indexOf('xavi') > -1) {
+  console.log('hello', greet, '!!!');
+}
+
+var forTrimSample = `            <div>                </div>           `;
+// console.log('String.trim()', forTrimSample.trim());
+console.log('String.trimStart()', forTrimSample);
 // console.log(pieceOfHtmlUsingBackTick, pieceOfHtmlWithoutUsingBackTick);
+
+var replacedString = greet.replace('i', '');
+var replacedString2 = greet.replaceAll('i', '');
+
+console.log('String.replace()', replacedString);
+console.log('String.replace()', replacedString2);
+
+//if you want to cut a portion of string
+console.log(greet.slice(0, 2));
+console.log(greet.substring(2, 5));
+console.log(greet.substr(-1, 2));
+
+console.log('String.padStart()', '123'.padStart(10, 0));
+console.log('String.padStart()', '123'.padEnd(10, 0));
+
+var number = '123';
+
+console.log(number);
+console.log(parseInt(number)); // usage of radix number advantages
+
+// TODO
+// Applying for of generate all first letters in capital letters for following string
+// JACK AND JILL WENT UP THE HILL
