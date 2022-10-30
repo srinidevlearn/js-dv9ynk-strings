@@ -109,4 +109,4 @@ console.log(parseInt(number)); // usage of radix number advantages
 
 // TODO
 // Applying for of generate all first letters in capital letters for following string
-// JACK AND JILL WENT UP THE HILL
+// JACK AND JILL WENT UP THE HILL -> Jack And Jill Went Up The Hill
