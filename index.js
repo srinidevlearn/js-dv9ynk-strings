@@ -49,4 +49,6 @@ var pieceOfHtmlWithoutUsingBackTick =
 
 document.write(pieceOfHtmlUsingBackTick);
 
-console.log(pieceOfHtmlUsingBackTick, pieceOfHtmlWithoutUsingBackTick);
+for (let char of greet) console.log(char);
+
+// console.log(pieceOfHtmlUsingBackTick, pieceOfHtmlWithoutUsingBackTick);
