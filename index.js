@@ -47,8 +47,10 @@ var pieceOfHtmlWithoutUsingBackTick =
   '</div>' +
   '</div>';
 
-document.write(pieceOfHtmlUsingBackTick);
 
-for (let char of greet) console.log(char);
-
+var count = 0;
+for (let char of greet) {
+  console.log(`String postion at ${count} :: ${char}`);
+  count++;
+}
 // console.log(pieceOfHtmlUsingBackTick, pieceOfHtmlWithoutUsingBackTick);
